@@ -3,28 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToolHub - All-in-One Online Tools for Free</title>
-    <meta name="description" content="Free online tools for all your needs: PDF conversion, image editing, video downloading, file compression and more. No signup required.">
-    <meta name="keywords" content="online tools, PDF converter, image compressor, background remover, video downloader, free tools">
-    
-    <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="ToolHub - All-in-One Online Tools for Free">
-    <meta property="og:description" content="Free online tools for all your needs: PDF conversion, image editing, video downloading, file compression and more.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://toolhub.example.com">
-    <meta property="og:image" content="https://toolhub.example.com/og-image.jpg">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ToolHub - All-in-One Online Tools for Free">
-    <meta name="twitter:description" content="Free online tools for all your needs.">
-    <meta name="twitter:image" content="https://toolhub.example.com/twitter-image.jpg">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    
-    <!-- PWA Manifest -->
-    <link rel="manifest" href="manifest.json">
+    <title>Image Compressor - Free Online Tool</title>
+    <meta name="description" content="Free online image compressor tool. Reduce file size of JPG, PNG, WebP, and GIF images without losing quality.">
     
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -45,20 +25,11 @@
             --text-light: #6c757d;
             --bg-light: #f8f9fa;
             --bg-white: #ffffff;
+            --success-color: #10b981;
             --shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
             --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
             --radius: 8px;
             --transition: all 0.3s ease;
-        }
-
-        /* Dark Mode Variables */
-        [data-theme="dark"] {
-            --text-dark: #f8f9fa;
-            --text-light: #adb5bd;
-            --bg-light: #212529;
-            --bg-white: #343a40;
-            --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-            --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.4);
         }
 
         /* Base Styles */
@@ -66,10 +37,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
         }
 
         body {
@@ -150,167 +117,7 @@
             width: 100%;
         }
 
-        .header-actions {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .theme-toggle {
-            background: none;
-            border: none;
-            font-size: 1.25rem;
-            cursor: pointer;
-            color: var(--text-dark);
-            transition: var(--transition);
-        }
-
-        .theme-toggle:hover {
-            color: var(--primary-color);
-        }
-
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: var(--text-dark);
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            color: white;
-            padding: 5rem 0;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
-            opacity: 0.5;
-        }
-
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-
-        .hero p {
-            font-size: 1.25rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-
-        .search-bar {
-            display: flex;
-            max-width: 600px;
-            margin: 0 auto 2rem;
-            border-radius: 50px;
-            overflow: hidden;
-            box-shadow: var(--shadow-lg);
-        }
-
-        .search-bar input {
-            flex: 1;
-            padding: 1rem 1.5rem;
-            border: none;
-            font-size: 1rem;
-            outline: none;
-        }
-
-        .search-bar button {
-            background-color: var(--accent-color);
-            color: white;
-            border: none;
-            padding: 0 1.5rem;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .search-bar button:hover {
-            background-color: #3ab0d6;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: white;
-            padding: 0.75rem 2rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: var(--transition);
-            border: none;
-            cursor: pointer;
-            box-shadow: var(--shadow);
-        }
-
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        /* Ad Top Section */
-        .ad-section {
-            background-color: var(--bg-white);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 90px;
-            color: var(--text-light);
-            transition: var(--transition);
-        }
-
-        /* Tools Section */
-        .section {
-            padding: 4rem 0;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: var(--text-dark);
-        }
-
-        .section-subtitle {
-            font-size: 1.125rem;
-            color: var(--text-light);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .tools-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
+        /* Tool Card Styles */
         .tool-card {
             background-color: var(--bg-white);
             border-radius: var(--radius);
@@ -321,6 +128,8 @@
             display: flex;
             flex-direction: column;
             height: 100%;
+            max-width: 350px;
+            margin: 2rem auto;
         }
 
         .tool-card:hover {
@@ -346,195 +155,328 @@
             flex-grow: 1;
         }
 
-        .tool-card .btn {
-            align-self: center;
-            margin-top: auto;
-        }
-
-        /* Features Section */
-        .features {
-            background-color: var(--bg-white);
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
             transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            box-shadow: var(--shadow);
         }
 
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+            background-color: var(--primary-dark);
         }
 
-        .feature-item {
+        /* Tool Page Styles */
+        .tool-page {
+            display: none;
+            padding: 2rem 0;
+        }
+
+        .tool-page.active {
+            display: block;
+        }
+
+        .page-header {
             text-align: center;
-            padding: 1.5rem;
+            margin-bottom: 2rem;
         }
 
-        .feature-icon {
+        .page-title {
             font-size: 2.5rem;
-            color: var(--primary-color);
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .page-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Upload Area */
+        .upload-area {
+            background-color: var(--bg-white);
+            border-radius: var(--radius);
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        .upload-box {
+            border: 2px dashed var(--text-light);
+            border-radius: var(--radius);
+            padding: 3rem 1rem;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
             margin-bottom: 1rem;
         }
 
-        .feature-item h3 {
-            font-size: 1.25rem;
+        .upload-box:hover, .upload-box.drag-over {
+            border-color: var(--primary-color);
+            background-color: rgba(67, 97, 238, 0.05);
+        }
+
+        .upload-icon {
+            font-size: 3rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .upload-box h3 {
             margin-bottom: 0.5rem;
             color: var(--text-dark);
         }
 
-        .feature-item p {
+        .upload-box p {
             color: var(--text-light);
+            margin-bottom: 1rem;
         }
 
-        /* Footer */
-        footer {
-            background-color: var(--text-dark);
-            color: white;
-            padding: 4rem 0 2rem;
+        .file-input {
+            display: none;
         }
 
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
+        .btn-secondary {
+            background-color: var(--text-light);
+        }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+
+        .btn-success {
+            background-color: var(--success-color);
+        }
+
+        .btn-success:hover {
+            background-color: #0da271;
+        }
+
+        /* Compression Controls */
+        .controls {
+            background-color: var(--bg-white);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
             margin-bottom: 2rem;
         }
 
-        .footer-section h3 {
-            font-size: 1.25rem;
+        .control-group {
             margin-bottom: 1.5rem;
-            position: relative;
-            padding-bottom: 0.5rem;
         }
 
-        .footer-section h3::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 40px;
-            height: 2px;
-            background-color: var(--accent-color);
-        }
-
-        .footer-links {
-            list-style: none;
-        }
-
-        .footer-links li {
+        .control-group h3 {
             margin-bottom: 0.75rem;
+            color: var(--text-dark);
         }
 
-        .footer-links a {
-            color: #adb5bd;
-            text-decoration: none;
-            transition: var(--transition);
+        .quality-slider {
+            width: 100%;
+            margin: 1rem 0;
         }
 
-        .footer-links a:hover {
-            color: white;
-            padding-left: 5px;
-        }
-
-        .social-links {
+        .preset-buttons {
             display: flex;
-            gap: 1rem;
-            margin-top: 1rem;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
         }
 
-        .social-links a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            color: white;
-            text-decoration: none;
-            transition: var(--transition);
-        }
-
-        .social-links a:hover {
-            background-color: var(--accent-color);
-            transform: translateY(-3px);
-        }
-
-        .newsletter-form {
-            display: flex;
-            margin-top: 1rem;
-        }
-
-        .newsletter-form input {
+        .preset-btn {
             flex: 1;
-            padding: 0.75rem;
-            border: none;
-            border-radius: var(--radius) 0 0 var(--radius);
-            outline: none;
-        }
-
-        .newsletter-form button {
-            background-color: var(--accent-color);
-            color: white;
-            border: none;
-            padding: 0 1rem;
-            border-radius: 0 var(--radius) var(--radius) 0;
+            padding: 0.5rem;
+            background-color: var(--bg-light);
+            border: 1px solid var(--text-light);
+            border-radius: var(--radius);
             cursor: pointer;
             transition: var(--transition);
         }
 
-        .newsletter-form button:hover {
-            background-color: #3ab0d6;
-        }
-
-        .footer-bottom {
-            text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: #adb5bd;
-            font-size: 0.875rem;
-        }
-
-        /* Back to Top Button */
-        .back-to-top {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            width: 50px;
-            height: 50px;
+        .preset-btn.active {
             background-color: var(--primary-color);
             color: white;
-            border-radius: 50%;
+            border-color: var(--primary-color);
+        }
+
+        .format-select, .resize-input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--text-light);
+            border-radius: var(--radius);
+            margin-bottom: 0.5rem;
+        }
+
+        .resize-controls {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .resize-input {
+            flex: 1;
+        }
+
+        .aspect-ratio-toggle {
             display: flex;
             align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            box-shadow: var(--shadow-lg);
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 24px;
+        }
+
+        .toggle-switch input {
             opacity: 0;
-            visibility: hidden;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 24px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: var(--primary-color);
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        /* Preview Section */
+        .preview-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .preview-section {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .preview-card {
+            background-color: var(--bg-white);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .preview-card h3 {
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+            border-bottom: 1px solid var(--bg-light);
+            padding-bottom: 0.5rem;
+        }
+
+        .preview-image {
+            max-width: 100%;
+            max-height: 300px;
+            margin: 0 auto;
+            display: block;
+            border-radius: var(--radius);
+        }
+
+        .image-info {
+            margin-top: 1rem;
+            font-size: 0.875rem;
+            color: var(--text-light);
+        }
+
+        .savings {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--success-color);
+            margin: 1rem 0;
+        }
+
+        /* Progress Bar */
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background-color: var(--bg-light);
+            border-radius: 3px;
+            overflow: hidden;
+            margin: 1rem 0;
+        }
+
+        .progress {
+            height: 100%;
+            background-color: var(--primary-color);
+            width: 0%;
             transition: var(--transition);
-            z-index: 99;
         }
 
-        .back-to-top.visible {
-            opacity: 1;
-            visibility: visible;
+        /* Back Button */
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-dark);
+            text-decoration: none;
+            margin-bottom: 1rem;
+            transition: var(--transition);
         }
 
-        .back-to-top:hover {
-            background-color: var(--primary-dark);
-            transform: translateY(-3px);
+        .back-btn:hover {
+            color: var(--primary-color);
+        }
+
+        /* Utility Classes */
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-2 {
+            margin-top: 0.5rem;
+        }
+
+        .mb-2 {
+            margin-bottom: 0.5rem;
+        }
+
+        .hidden {
+            display: none;
         }
 
         /* Responsive Styles */
-        @media (max-width: 992px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .tools-grid {
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            }
-        }
-
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
@@ -553,52 +495,8 @@
                 display: flex;
             }
             
-            .mobile-menu-btn {
-                display: block;
-            }
-            
-            .hero h1 {
+            .page-title {
                 font-size: 2rem;
-            }
-            
-            .hero p {
-                font-size: 1.125rem;
-            }
-            
-            .section-title {
-                font-size: 2rem;
-            }
-            
-            .footer-content {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .hero {
-                padding: 3rem 0;
-            }
-            
-            .search-bar {
-                flex-direction: column;
-                border-radius: var(--radius);
-            }
-            
-            .search-bar input {
-                border-radius: var(--radius) var(--radius) 0 0;
-            }
-            
-            .search-bar button {
-                padding: 0.75rem;
-                border-radius: 0 0 var(--radius) var(--radius);
-            }
-            
-            .tools-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .features-grid {
-                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -608,363 +506,442 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="#" class="logo">
+                <a href="#" class="logo" id="homeLink">
                     <i class="fas fa-tools"></i>
                     <span>ToolHub</span>
                 </a>
                 
                 <nav class="nav-links">
-                    <a href="#home">Home</a>
+                    <a href="#" id="homeNavLink">Home</a>
                     <a href="#tools">Tools</a>
-                    <a href="#features">Features</a>
                     <a href="#about">About</a>
                     <a href="#contact">Contact</a>
                 </nav>
-                
-                <div class="header-actions">
-                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                    <button class="mobile-menu-btn" id="mobileMenuBtn">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <h1>All-in-One Online Tools in One Place</h1>
-                <p>Free, fast, and secure tools for all your needs. No registration required.</p>
-                
-                <div class="search-bar">
-                    <input type="text" placeholder="Search for tools (e.g., PDF converter, image compressor)...">
-                    <button type="button"><i class="fas fa-search"></i></button>
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Tool Card (Home Page View) -->
+        <section id="toolCardSection">
+            <div class="tool-card">
+                <div class="tool-icon">
+                    <i class="fas fa-compress-arrows-alt"></i>
                 </div>
-                
-                <a href="#tools" class="btn">Explore Tools</a>
+                <h3>Image Compressor</h3>
+                <p>Reduce image file size without losing quality. Supports JPG, PNG, WebP, and GIF.</p>
+                <a href="#image-compressor" class="btn" id="toolLink">Use Now</a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Ad Top Section -->
-    <div class="container">
-        <div class="ad-section" id="ad-top">
-            <p>Advertisement Space (728×90)</p>
-        </div>
-    </div>
-
-    <!-- Tools Section -->
-    <section class="section" id="tools">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Popular Tools</h2>
-                <p class="section-subtitle">Discover our most used tools that help thousands of users daily</p>
-            </div>
+        <!-- Tool Page (Compressor Tool) -->
+        <section class="tool-page" id="imageCompressorPage">
+            <a href="#" class="back-btn" id="backButton">
+                <i class="fas fa-arrow-left"></i> Back to Tools
+            </a>
             
-            <div class="tools-grid">
-                <!-- Tool Card 1 -->
-                <div class="tool-card">
-                    <div class="tool-icon">
-                        <i class="fas fa-file-pdf"></i>
-                    </div>
-                    <h3>PDF Converter</h3>
-                    <p>Convert PDF to Word, Excel, PowerPoint and vice versa. Preserve formatting and quality.</p>
-                    <a href="#" class="btn">Use Now</a>
-                </div>
-                
-                <!-- Tool Card 2 -->
-                <div class="tool-card">
-                    <div class="tool-icon">
-                        <i class="fas fa-compress-arrows-alt"></i>
-                    </div>
-                    <h3>Image Compressor</h3>
-                    <p>Reduce image file size without losing quality. Supports JPG, PNG, WebP, and GIF.</p>
-                    <a href="#" class="btn">Use Now</a>
-                </div>
-                
-                <!-- Tool Card 3 -->
-                <div class="tool-card">
-                    <div class="tool-icon">
-                        <i class="fas fa-cut"></i>
-                    </div>
-                    <h3>Background Remover</h3>
-                    <p>Remove image backgrounds automatically with AI. Get transparent PNGs in seconds.</p>
-                    <a href="#" class="btn">Use Now</a>
-                </div>
-                
-                <!-- Tool Card 4 -->
-                <div class="tool-card">
-                    <div class="tool-icon">
-                        <i class="fas fa-download"></i>
-                    </div>
-                    <h3>Video Downloader</h3>
-                    <p>Download videos from YouTube, Facebook, Instagram and other platforms.</p>
-                    <a href="#" class="btn">Use Now</a>
-                </div>
-                
-                <!-- Tool Card 5 -->
-                <div class="tool-card">
-                    <div class="tool-icon">
-                        <i class="fas fa-lock"></i>
-                    </div>
-                    <h3>Password Generator</h3>
-                    <p>Create strong, secure passwords with customizable length and character types.</p>
-                    <a href="#" class="btn">Use Now</a>
-                </div>
-                
-                <!-- Tool Card 6 -->
-                <div class="tool-card">
-                    <div class="tool-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>HTML Formatter</h3>
-                    <p>Beautify and format your HTML code for better readability and debugging.</p>
-                    <a href="#" class="btn">Use Now</a>
-                </div>
+            <div class="page-header">
+                <h1 class="page-title">Image Compressor</h1>
+                <p class="page-subtitle">Reduce the file size of your images without sacrificing quality. Perfect for websites, emails, and social media.</p>
             </div>
-        </div>
-    </section>
 
-    <!-- Ad Sidebar Section -->
-    <div class="container">
-        <div class="ad-section" id="ad-sidebar">
-            <p>Advertisement Space (300×250)</p>
-        </div>
-    </div>
+            <!-- Upload Area -->
+            <section class="upload-area">
+                <div class="upload-box" id="dropArea">
+                    <div class="upload-icon">📁</div>
+                    <h3>Drop your image here</h3>
+                    <p>or click to browse</p>
+                    <p>Supports: JPG, PNG, WebP, GIF</p>
+                    <input type="file" id="fileInput" class="file-input" accept="image/jpeg,image/png,image/webp,image/gif">
+                    <button class="btn mt-2" id="browseBtn">Select Image</button>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-secondary" id="resetBtn" disabled>Reset</button>
+                </div>
+            </section>
 
-    <!-- Features Section -->
-    <section class="section features" id="features">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Why Choose ToolHub?</h2>
-                <p class="section-subtitle">We provide the best user experience with our powerful features</p>
-            </div>
-            
-            <div class="features-grid">
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-dollar-sign"></i>
+            <!-- Compression Controls -->
+            <section class="controls">
+                <div class="control-group">
+                    <h3>Quality / Compression Level</h3>
+                    <div class="preset-buttons">
+                        <button class="preset-btn active" data-quality="90">High (90)</button>
+                        <button class="preset-btn" data-quality="70">Medium (70)</button>
+                        <button class="preset-btn" data-quality="50">Low (50)</button>
                     </div>
-                    <h3>100% Free</h3>
-                    <p>All tools are completely free to use with no hidden charges or limitations.</p>
-                </div>
-                
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
+                    <input type="range" min="0" max="100" value="90" class="quality-slider" id="qualitySlider">
+                    <div class="text-center">
+                        <span id="qualityValue">90%</span>
                     </div>
-                    <h3>Secure & Private</h3>
-                    <p>Your files are processed securely in your browser. We don't store your data.</p>
                 </div>
-                
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h3>Fast Processing</h3>
-                    <p>Optimized algorithms ensure quick processing even for large files.</p>
-                </div>
-                
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Works on All Devices</h3>
-                    <p>Access our tools from any device - desktop, tablet, or smartphone.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>ToolHub</h3>
-                    <p>Your one-stop destination for all online tools. Free, fast, and secure solutions for everyday tasks.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <div class="control-group">
+                    <h3>Output Format</h3>
+                    <select class="format-select" id="formatSelect">
+                        <option value="original">Same as original</option>
+                        <option value="jpeg">JPEG</option>
+                        <option value="png">PNG</option>
+                        <option value="webp">WebP</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <h3>Resize Image</h3>
+                    <div class="resize-controls">
+                        <input type="number" class="resize-input" id="widthInput" placeholder="Width" min="1">
+                        <span>×</span>
+                        <input type="number" class="resize-input" id="heightInput" placeholder="Height" min="1">
+                    </div>
+                    <div class="aspect-ratio-toggle">
+                        <label for="aspectRatioToggle">Maintain aspect ratio</label>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="aspectRatioToggle" checked>
+                            <span class="slider"></span>
+                        </label>
                     </div>
                 </div>
-                
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#tools">Tools</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Tools</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">PDF Converter</a></li>
-                        <li><a href="#">Image Compressor</a></li>
-                        <li><a href="#">Background Remover</a></li>
-                        <li><a href="#">Video Downloader</a></li>
-                        <li><a href="#">All Tools</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Newsletter</h3>
-                    <p>Subscribe to get updates on new tools and features.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your email address" required>
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2023 ToolHub. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
-            </div>
-        </div>
-    </footer>
 
-    <!-- Back to Top Button -->
-    <a href="#" class="back-to-top" id="backToTop">
-        <i class="fas fa-chevron-up"></i>
-    </a>
+                <div class="text-center">
+                    <button class="btn btn-success" id="compressBtn" disabled>Compress Image</button>
+                </div>
+            </section>
+
+            <!-- Progress Bar -->
+            <div class="progress-bar hidden" id="progressContainer">
+                <div class="progress" id="progressBar"></div>
+            </div>
+
+            <!-- Preview Section -->
+            <section class="preview-section">
+                <div class="preview-card">
+                    <h3>Original Image</h3>
+                    <img id="originalPreview" class="preview-image hidden" alt="Original image preview">
+                    <div class="image-info" id="originalInfo"></div>
+                </div>
+                <div class="preview-card">
+                    <h3>Compressed Image</h3>
+                    <img id="compressedPreview" class="preview-image hidden" alt="Compressed image preview">
+                    <div class="image-info" id="compressedInfo"></div>
+                    <div class="savings" id="savingsInfo"></div>
+                    <button class="btn btn-success mt-2" id="downloadBtn" disabled>Download Compressed Image</button>
+                </div>
+            </section>
+        </section>
+    </main>
 
     <!-- JavaScript -->
     <script>
-        // AdSense Configuration
-        const ADSENSE_CONFIG = {
-            publisherId: 'ca-pub-XXXXXXXXXXXXXXXX',   // Replace with your Publisher ID
-            topAdUnit: 'AD_UNIT_ID_TOP',              // Replace with actual Ad Unit ID
-            sidebarAdUnit: 'AD_UNIT_ID_SIDE'          // Replace with actual Ad Unit ID
-        };
-
         // DOM Elements
-        const themeToggle = document.getElementById('themeToggle');
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const navLinks = document.querySelector('.nav-links');
-        const backToTop = document.getElementById('backToTop');
-
-        // Theme Toggle Functionality
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
-            document.documentElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            
-            // Update icon
-            themeToggle.innerHTML = newTheme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-        });
-
-        // Mobile Menu Toggle
-        mobileMenuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-
-        // Back to Top Button
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTop.classList.add('visible');
-            } else {
-                backToTop.classList.remove('visible');
-            }
-        });
-
-        // Search Functionality
-        const searchInput = document.querySelector('.search-bar input');
-        const searchButton = document.querySelector('.search-bar button');
+        const toolCardSection = document.getElementById('toolCardSection');
+        const imageCompressorPage = document.getElementById('imageCompressorPage');
+        const toolLink = document.getElementById('toolLink');
+        const backButton = document.getElementById('backButton');
+        const homeLink = document.getElementById('homeLink');
+        const homeNavLink = document.getElementById('homeNavLink');
         
-        searchButton.addEventListener('click', performSearch);
-        searchInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                performSearch();
-            }
+        // Tool Page Elements
+        const dropArea = document.getElementById('dropArea');
+        const fileInput = document.getElementById('fileInput');
+        const browseBtn = document.getElementById('browseBtn');
+        const resetBtn = document.getElementById('resetBtn');
+        const qualitySlider = document.getElementById('qualitySlider');
+        const qualityValue = document.getElementById('qualityValue');
+        const formatSelect = document.getElementById('formatSelect');
+        const widthInput = document.getElementById('widthInput');
+        const heightInput = document.getElementById('heightInput');
+        const aspectRatioToggle = document.getElementById('aspectRatioToggle');
+        const compressBtn = document.getElementById('compressBtn');
+        const progressContainer = document.getElementById('progressContainer');
+        const progressBar = document.getElementById('progressBar');
+        const originalPreview = document.getElementById('originalPreview');
+        const compressedPreview = document.getElementById('compressedPreview');
+        const originalInfo = document.getElementById('originalInfo');
+        const compressedInfo = document.getElementById('compressedInfo');
+        const savingsInfo = document.getElementById('savingsInfo');
+        const downloadBtn = document.getElementById('downloadBtn');
+
+        // State Variables
+        let originalImage = null;
+        let compressedImage = null;
+        let currentQuality = 90;
+        let isAspectRatioLocked = true;
+        let originalAspectRatio = 1;
+
+        // Navigation Event Listeners
+        toolLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            toolCardSection.style.display = 'none';
+            imageCompressorPage.classList.add('active');
+            document.title = "Image Compressor - Free Online Tool";
         });
 
-        function performSearch() {
-            const query = searchInput.value.trim();
-            if (query) {
-                alert(`Searching for: ${query}`);
-                // In a real implementation, this would filter tools or redirect to search results
+        backButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            imageCompressorPage.classList.remove('active');
+            toolCardSection.style.display = 'block';
+            document.title = "ToolHub - All-in-One Online Tools";
+        });
+
+        homeLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            imageCompressorPage.classList.remove('active');
+            toolCardSection.style.display = 'block';
+            document.title = "ToolHub - All-in-One Online Tools";
+        });
+
+        homeNavLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            imageCompressorPage.classList.remove('active');
+            toolCardSection.style.display = 'block';
+            document.title = "ToolHub - All-in-One Online Tools";
+        });
+
+        // Tool Functionality Event Listeners
+        browseBtn.addEventListener('click', () => fileInput.click());
+        fileInput.addEventListener('change', handleFileSelect);
+        dropArea.addEventListener('dragover', handleDragOver);
+        dropArea.addEventListener('dragleave', handleDragLeave);
+        dropArea.addEventListener('drop', handleDrop);
+        resetBtn.addEventListener('click', resetTool);
+        qualitySlider.addEventListener('input', updateQuality);
+        document.querySelectorAll('.preset-btn').forEach(btn => {
+            btn.addEventListener('click', setPresetQuality);
+        });
+        aspectRatioToggle.addEventListener('change', toggleAspectRatio);
+        widthInput.addEventListener('input', updateDimensions);
+        heightInput.addEventListener('input', updateDimensions);
+        compressBtn.addEventListener('click', compressImage);
+        downloadBtn.addEventListener('click', downloadCompressedImage);
+
+        // Functions
+        function handleDragOver(e) {
+            e.preventDefault();
+            dropArea.classList.add('drag-over');
+        }
+
+        function handleDragLeave(e) {
+            e.preventDefault();
+            dropArea.classList.remove('drag-over');
+        }
+
+        function handleDrop(e) {
+            e.preventDefault();
+            dropArea.classList.remove('drag-over');
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                processFile(files[0]);
             }
         }
 
-        // Tool Card Hover Effects
-        document.querySelectorAll('.tool-card').forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                card.style.transform = 'translateY(-5px)';
-            });
-            
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'translateY(0)';
-            });
-        });
-
-        // Initialize theme from localStorage
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        document.documentElement.setAttribute('data-theme', savedTheme);
-        themeToggle.innerHTML = savedTheme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-
-        // Initialize AdSense (placeholder implementation)
-        function initializeAdSense() {
-            // This would typically load the AdSense script with the configured publisher ID
-            console.log('AdSense Configuration:', ADSENSE_CONFIG);
-            
-            // In a real implementation, you would:
-            // 1. Load the AdSense script with the publisher ID
-            // 2. Create ad slots with the appropriate ad unit IDs
-            // 3. Push the ads to be displayed
+        function handleFileSelect(e) {
+            const files = e.target.files;
+            if (files.length > 0) {
+                processFile(files[0]);
+            }
         }
 
-        // Initialize when page loads
-        window.addEventListener('DOMContentLoaded', () => {
-            initializeAdSense();
-        });
-    </script>
-
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "ToolHub - All-in-One Online Tools for Free",
-        "url": "https://toolhub.example.com",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://toolhub.example.com/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-        },
-        "description": "Free online tools for all your needs: PDF conversion, image editing, video downloading, file compression and more.",
-        "publisher": {
-            "@type": "Organization",
-            "name": "ToolHub",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://toolhub.example.com/logo.png"
+        function processFile(file) {
+            if (!file.type.startsWith('image/')) {
+                alert('Please select a valid image file (JPG, PNG, WebP, or GIF).');
+                return;
             }
-        },
-        "sameAs": [
-            "https://www.facebook.com/toolhub",
-            "https://twitter.com/toolhub",
-            "https://www.instagram.com/toolhub"
-        ]
-    }
+            
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const img = new Image();
+                img.onload = function() {
+                    originalImage = {
+                        file: file,
+                        dataUrl: e.target.result,
+                        width: img.width,
+                        height: img.height,
+                        name: file.name
+                    };
+                    
+                    updateUIAfterUpload();
+                };
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function updateUIAfterUpload() {
+            resetBtn.disabled = false;
+            compressBtn.disabled = false;
+            
+            originalPreview.src = originalImage.dataUrl;
+            originalPreview.classList.remove('hidden');
+            originalInfo.textContent = `Size: ${formatFileSize(originalImage.file.size)} | Dimensions: ${originalImage.width}×${originalImage.height}`;
+            
+            // Set initial dimensions
+            widthInput.value = originalImage.width;
+            heightInput.value = originalImage.height;
+            originalAspectRatio = originalImage.width / originalImage.height;
+        }
+
+        function updateQuality() {
+            currentQuality = parseInt(qualitySlider.value);
+            qualityValue.textContent = `${currentQuality}%`;
+            
+            // Update active preset button
+            document.querySelectorAll('.preset-btn').forEach(btn => {
+                if (parseInt(btn.dataset.quality) === currentQuality) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+        }
+
+        function setPresetQuality(e) {
+            const quality = parseInt(e.target.dataset.quality);
+            qualitySlider.value = quality;
+            updateQuality();
+        }
+
+        function toggleAspectRatio() {
+            isAspectRatioLocked = aspectRatioToggle.checked;
+            if (isAspectRatioLocked && originalImage) {
+                originalAspectRatio = originalImage.width / originalImage.height;
+                updateDimensions();
+            }
+        }
+
+        function updateDimensions() {
+            if (!isAspectRatioLocked || !originalImage) return;
+            
+            if (this === widthInput && widthInput.value) {
+                heightInput.value = Math.round(widthInput.value / originalAspectRatio);
+            } else if (this === heightInput && heightInput.value) {
+                widthInput.value = Math.round(heightInput.value * originalAspectRatio);
+            }
+        }
+
+        function compressImage() {
+            if (!originalImage) return;
+            
+            progressContainer.classList.remove('hidden');
+            progressBar.style.width = '0%';
+            
+            setTimeout(() => {
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                
+                // Calculate new dimensions
+                let newWidth = parseInt(widthInput.value) || originalImage.width;
+                let newHeight = parseInt(heightInput.value) || originalImage.height;
+                
+                // Maintain aspect ratio if locked
+                if (isAspectRatioLocked) {
+                    const ratio = originalImage.width / originalImage.height;
+                    if (newWidth / newHeight > ratio) {
+                        newWidth = Math.round(newHeight * ratio);
+                    } else {
+                        newHeight = Math.round(newWidth / ratio);
+                    }
+                }
+                
+                canvas.width = newWidth;
+                canvas.height = newHeight;
+                
+                // Draw image on canvas
+                const img = new Image();
+                img.onload = function() {
+                    ctx.drawImage(img, 0, 0, newWidth, newHeight);
+                    
+                    // Get output format
+                    let outputFormat = formatSelect.value;
+                    if (outputFormat === 'original') {
+                        outputFormat = originalImage.file.type.split('/')[1];
+                        if (outputFormat === 'jpeg') outputFormat = 'jpg';
+                    }
+                    
+                    // Quality setting (only for JPEG/WebP)
+                    let quality = currentQuality / 100;
+                    if (outputFormat === 'png') quality = undefined;
+                    
+                    // Convert to data URL
+                    let mimeType;
+                    switch(outputFormat) {
+                        case 'jpg':
+                        case 'jpeg':
+                            mimeType = 'image/jpeg';
+                            break;
+                        case 'png':
+                            mimeType = 'image/png';
+                            break;
+                        case 'webp':
+                            mimeType = 'image/webp';
+                            break;
+                        default:
+                            mimeType = 'image/jpeg';
+                    }
+                    
+                    const compressedDataUrl = canvas.toDataURL(mimeType, quality);
+                    
+                    // Calculate file size
+                    const compressedSize = Math.round((compressedDataUrl.length - compressedDataUrl.indexOf(',') - 1) * 0.75);
+                    const originalSize = originalImage.file.size;
+                    const savings = ((originalSize - compressedSize) / originalSize * 100).toFixed(1);
+                    
+                    // Store compressed image
+                    compressedImage = {
+                        dataUrl: compressedDataUrl,
+                        width: newWidth,
+                        height: newHeight,
+                        size: compressedSize,
+                        format: outputFormat,
+                        name: originalImage.name.replace(/\.[^/.]+$/, '') + '-compressed-' + currentQuality + '.' + outputFormat
+                    };
+                    
+                    // Update UI
+                    compressedPreview.src = compressedDataUrl;
+                    compressedPreview.classList.remove('hidden');
+                    compressedInfo.textContent = `Size: ${formatFileSize(compressedSize)} | Dimensions: ${newWidth}×${newHeight}`;
+                    savingsInfo.textContent = `Reduced by ${savings}%`;
+                    downloadBtn.disabled = false;
+                    
+                    // Update progress
+                    progressBar.style.width = '100%';
+                    
+                    setTimeout(() => {
+                        progressContainer.classList.add('hidden');
+                    }, 500);
+                };
+                img.src = originalImage.dataUrl;
+            }, 300);
+        }
+
+        function downloadCompressedImage() {
+            if (!compressedImage) return;
+            
+            const link = document.createElement('a');
+            link.download = compressedImage.name;
+            link.href = compressedImage.dataUrl;
+            link.click();
+        }
+
+        function resetTool() {
+            originalImage = null;
+            compressedImage = null;
+            fileInput.value = '';
+            resetBtn.disabled = true;
+            compressBtn.disabled = true;
+            downloadBtn.disabled = true;
+            originalPreview.classList.add('hidden');
+            compressedPreview.classList.add('hidden');
+            originalInfo.textContent = '';
+            compressedInfo.textContent = '';
+            savingsInfo.textContent = '';
+            progressContainer.classList.add('hidden');
+        }
+
+        function formatFileSize(bytes) {
+            if (bytes < 1024) return bytes + ' bytes';
+            else if (bytes < 1048576) return (bytes / 1024).toFixed(1) + ' KB';
+            else return (bytes / 1048576).toFixed(1) + ' MB';
+        }
     </script>
 </body>
 </html>
